@@ -12,6 +12,37 @@ import java.util.Properties;
 import com.rsbuddy.script.methods.Environment;
 
 import strategyLoop.*;
+import strategyLoop.dagannoth.Actions;
+import strategyLoop.dagannoth.AutoRetaliate;
+import strategyLoop.dagannoth.BonesToPeaches;
+import strategyLoop.dagannoth.BunyipSummon;
+import strategyLoop.dagannoth.BuyItems;
+import strategyLoop.dagannoth.CloseStore;
+import strategyLoop.dagannoth.DagAttack;
+import strategyLoop.dagannoth.DagJunk;
+import strategyLoop.dagannoth.DefaultBodyOn;
+import strategyLoop.dagannoth.DefaultHelmOn;
+import strategyLoop.dagannoth.DefaultLegsOn;
+import strategyLoop.dagannoth.DefaultShieldOn;
+import strategyLoop.dagannoth.DefaultWeapOn;
+import strategyLoop.dagannoth.EatFood;
+import strategyLoop.dagannoth.GuthanBodyOn;
+import strategyLoop.dagannoth.GuthanHeal;
+import strategyLoop.dagannoth.GuthanHelmOn;
+import strategyLoop.dagannoth.GuthanOff;
+import strategyLoop.dagannoth.GuthanSkirtOn;
+import strategyLoop.dagannoth.GuthanSpearOn;
+import strategyLoop.dagannoth.LootBones;
+import strategyLoop.dagannoth.LootDags;
+import strategyLoop.dagannoth.LootEffigy;
+import strategyLoop.dagannoth.Normalize;
+import strategyLoop.dagannoth.PotAttack;
+import strategyLoop.dagannoth.PotDefense;
+import strategyLoop.dagannoth.PotStrength;
+import strategyLoop.dagannoth.SellItems;
+import strategyLoop.dagannoth.UnnoteFood;
+import strategyLoop.dagannoth.WalkDags;
+import strategyLoop.dagannoth.WalkJossik;
 
 
 /*

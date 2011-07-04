@@ -27,7 +27,7 @@ import com.rsbuddy.script.methods.Players;
 import com.rsbuddy.script.methods.Skills;
 
 
-import strategyLoop.Actions;
+import strategyLoop.dagannoth.Actions;
 
 import com.rsbuddy.script.methods.Walking;
 
@@ -124,6 +124,7 @@ public class MavenDagannoths extends ActiveScript implements PaintListener,
 		g.setColor(color4);
 		g.setFont(font2);
 		g.drawString("Show/Hide", 10, 15);
+		
 
 		g.setColor(color1);
 		if (showhide) {
@@ -144,6 +145,8 @@ public class MavenDagannoths extends ActiveScript implements PaintListener,
 			g.fillRect(110, 0, 100, 20);
 			g.fillRect(230, 0, 100, 20);
 			g.fillRect(5, 344, 68, 129);
+			g.setColor(color4);
+			g.drawString("Open GUI", 240, 15);
 			g.setColor(color2);
 			g.setStroke(stroke1);
 			g.drawRect(5, 344, 68, 129);
@@ -191,9 +194,10 @@ public class MavenDagannoths extends ActiveScript implements PaintListener,
 			} else if (skillsloot == 1) {
 
 				g.setColor(color4);
-				g.setFont(font3);
+				g.setFont(font2);
 				g.drawString("Skills", 120, 15);
 				g.drawImage(img4, 82, 348, null);
+				g.setFont(font3);
 				if (!gui.isVisible()) {
 					skillExpCount = 0;
 					for (Skill i : addSkills) {
@@ -256,21 +260,21 @@ public class MavenDagannoths extends ActiveScript implements PaintListener,
 						else if (itemPickCount == 4)
 							s.drawItem(g, firstcolumn, quaLine);
 						else if (itemPickCount == 5)
-							s.drawItem(g, firstcolumn, quiLine);
-						else if (itemPickCount == 6)
-							s.drawItem(g, firstcolumn, sexLine);
-						else if (itemPickCount == 7)
 							s.drawItem(g, secondcolumn, topLine);
-						else if (itemPickCount == 8)
+						else if (itemPickCount == 6)
 							s.drawItem(g, secondcolumn, secLine);
-						else if (itemPickCount == 9)
+						else if (itemPickCount == 7)
 							s.drawItem(g, secondcolumn, triLine);
-						else if (itemPickCount == 10)
+						else if (itemPickCount == 8)
 							s.drawItem(g, secondcolumn, quaLine);
+						else if (itemPickCount == 9)
+							s.drawItem(g, thirdcolumn, topLine);
+						else if (itemPickCount == 10)
+							s.drawItem(g, thirdcolumn, secLine);
 						else if (itemPickCount == 11)
-							s.drawItem(g, secondcolumn, quiLine);
+							s.drawItem(g, thirdcolumn, triLine);
 						else if (itemPickCount == 12)
-							s.drawItem(g, secondcolumn, sexLine);
+							s.drawItem(g, thirdcolumn, quaLine);
 						
 					}
 					totalseeds = 0;
@@ -338,8 +342,9 @@ public class MavenDagannoths extends ActiveScript implements PaintListener,
 	public static int quaLine = 460;
 	public static int quiLine = 480;
 	public static int sexLine = 500;
-	public static int firstcolumn = 200;
-	public static int secondcolumn = 450;
+	public static int firstcolumn = 80;
+	public static int secondcolumn = 200;
+	public static int thirdcolumn = 320;
 	int skillExpCount = 0;
 
 	public static boolean guthansIsOn = false;
